@@ -7,9 +7,11 @@ authors = ["Lewis <ljleighfield@gmail.com>"]
 [tool.poetry.dependencies]
 python = "^3.8"
 django = "^3.0.6"
+django-allauth = "^0.41.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
+black = {version = "^19.10b0", allow-prereleases = true}
 
 [build-system]
 requires = ["poetry>=0.12"]
