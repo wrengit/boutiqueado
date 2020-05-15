@@ -66,13 +66,13 @@
     <p id="t13" class="pln"><span class="n"><a href="#t13">13</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t14" class="run"><span class="n"><a href="#t14">14</a></span><span class="t">    <span class="key">def</span> <span class="nam">test_category_friendly_name_returns_friendly_name</span><span class="op">(</span><span class="nam">self</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p id="t15" class="run"><span class="n"><a href="#t15">15</a></span><span class="t">        <span class="nam">category</span> <span class="op">=</span> <span class="nam">Category</span><span class="op">.</span><span class="nam">objects</span><span class="op">.</span><span class="nam">create</span><span class="op">(</span><span class="nam">name</span> <span class="op">=</span> <span class="str">"Test Category"</span><span class="op">,</span> <span class="nam">friendly_name</span><span class="op">=</span><span class="str">"Category Friendly Name"</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t16" class="run"><span class="n"><a href="#t16">16</a></span><span class="t">        <span class="nam">self</span><span class="op">.</span><span class="nam">assertEqual</span><span class="op">(</span><span class="nam">category</span><span class="op">.</span><span class="nam">friendly_name</span><span class="op">,</span> <span class="str">"Category Friendly Name"</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t16" class="run"><span class="n"><a href="#t16">16</a></span><span class="t">        <span class="nam">self</span><span class="op">.</span><span class="nam">assertEqual</span><span class="op">(</span><span class="nam">category</span><span class="op">.</span><span class="nam">get_friendly_name</span><span class="op">(</span><span class="op">)</span><span class="op">,</span> <span class="str">"Category Friendly Name"</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
 </div>
 <div id="footer">
     <div class="content">
         <p>
             <a class="nav" href="index.html">&#xab; index</a> &nbsp; &nbsp; <a class="nav" href="https://coverage.readthedocs.io">coverage.py v5.1</a>,
-            created at 2020-05-15 12:08
+            created at 2020-05-15 14:42
         </p>
     </div>
 </div>

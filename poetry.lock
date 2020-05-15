@@ -85,6 +85,18 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 version = "7.1.2"
 
 [[package]]
+category = "main"
+description = "Hosted coverage reports for GitHub, Bitbucket and Gitlab"
+name = "codecov"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+version = "2.0.22"
+
+[package.dependencies]
+coverage = "*"
+requests = ">=2.7.9"
+
+[[package]]
 category = "dev"
 description = "Cross-platform colored terminal text."
 marker = "sys_platform == \"win32\""
@@ -363,7 +375,7 @@ python-versions = "*"
 version = "0.1.9"
 
 [metadata]
-content-hash = "47bbf13636df99c3709420f9466fbe0cf6fdff2d4669eb85d8a76e110f2a7ad9"
+content-hash = "418219baf9870c48c20e00fef0d452f8f9fed25074984e5db46381db220da3b2"
 python-versions = "^3.8"
 
 [metadata.files]
@@ -398,6 +410,10 @@ chardet = [
 click = [
     {file = "click-7.1.2-py2.py3-none-any.whl", hash = "sha256:dacca89f4bfadd5de3d7489b7c8a566eee0d3676333fbb50030263894c38c0dc"},
     {file = "click-7.1.2.tar.gz", hash = "sha256:d2b5255c7c6349bc1bd1e59e08cd12acbbd63ce649f2588755783aa94dfb6b1a"},
+]
+codecov = [
+    {file = "codecov-2.0.22-py2.py3-none-any.whl", hash = "sha256:09fb045eb044a619cd2b9dacd7789ae8e322cb7f18196378579fd8d883e6b665"},
+    {file = "codecov-2.0.22.tar.gz", hash = "sha256:aeeefa3a03cac8a78e4f988e935b51a4689bb1f17f20d4e827807ee11135f845"},
 ]
 colorama = [
     {file = "colorama-0.4.3-py2.py3-none-any.whl", hash = "sha256:7d73d2a99753107a36ac6b455ee49046802e59d9d076ef8e47b61499fa29afff"},
