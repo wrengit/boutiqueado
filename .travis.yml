@@ -1,5 +1,5 @@
   language: python
   script:
-    - py.test --cov-report term --cov=app/test/
+    - python manage.py test --cov-report term --cov=app/test/
   after_success:
     - codecov
